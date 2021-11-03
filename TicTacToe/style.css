@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header
+{
+    font-family: 'Lobster', cursive;
+    background-color: red;
+    color: white;
+    height: 10vw;
+    text-align: center;
+    font-size: 3rem;
+}
+nav{
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    height: 80px;
+    margin:20px 0px;
+    font-size: 2rem;
+    color: thistle;
+    background-color: whitesmoke;
+}
+nav ul li{
+    list-style: none;
+    padding:2px 12px;
+}
+.game{
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: center;
+}
+.template{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+    
+}
+.box
+{
+    border: 2px solid black;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(228, 220, 207);
+    cursor: pointer;
+}
+.br{
+    border-right: 0px;
+}
+.bl{
+    border-left: 0px;
+}
+.bd{
+    border-bottom: 0px;
+}
+.bt{
+    border-top: 0px;
+}
+@media all and (max-width:1000px)
+{
+    header{
+        font-size: 2rem;
+        height: 20vw;
+    }
+}
+@media all and (max-width:617px)
+{
+    header{
+        font-size: 1.6rem;
+        height: 30vw;
+    }
+}
+@media all and (max-width:350px)
+{
+    header{
+        font-size: 1.6rem;
+        height: 40vw;
+    }
+}
