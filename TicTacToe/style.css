@@ -36,7 +36,8 @@ nav ul li{
 .game{
     display: flex;
     /* background-color: yellow; */
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .template{
     display: grid;
@@ -68,6 +69,29 @@ nav ul li{
 }
 .bt{
     border-top: 0px;
+}
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#info{
+    font-size: 2vw;
+    text-align: center;
+}
+#reset{
+    border: 2px solid red;
+    padding: 2vw 4vw;
+    color: white;
+    font-size: 2vw;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+}
+#reset:hover{
+    cursor: pointer;
+    background-color: rgb(206, 28, 28);
 }
 @media all and (max-width:1000px)
 {
