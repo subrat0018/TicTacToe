@@ -88,12 +88,6 @@ for(let i=0;i<arr.length;i++)
         if(over())
         {
             gameover.play();
-            setInterval(() => {
-                let body=document.getElementById("bod");
-                             
-                body.style.backgroundColor=`rgb(30,90,117)`;
-                console.log("Hi");
-            }, 1000);
             
             // console.log("Debug")
             // alert(`${winner} is winner`);
